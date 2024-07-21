@@ -24,14 +24,12 @@ function App() {
 
 
   
-  async function getNameAndBalance() {
-    try {
-      const res = await axios.get(`https://talari-server.vercel.app/getNameAndBalance`, {
-        params: { userAddress: address },
-      });
-  
+  function getNameAndBalance() {
+    axios.get('https://talari-server.vercel.app/getNameAndBalance', {
+      params: { userAddress: address },
+    })
+    .then((res) => {
       const response = res.data;
-      
   
       if (response.name) {
         setName(response.name);
@@ -40,9 +38,10 @@ function App() {
       setDollars(String(response.dollars));
       setHistory(response.history); // Assuming response.history is an array
       setRequests(response.requests); // Assuming response.requests is an object
-    } catch (error) {
+    })
+    .catch((error) => {
       console.error('Error fetching data:', error);
-    }
+    });
   }
   
   useEffect(() => {
