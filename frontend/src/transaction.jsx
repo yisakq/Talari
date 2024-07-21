@@ -26,7 +26,7 @@ function App() {
   
   async function getNameAndBalance() {
     try {
-      const res = await axios.get(`http://localhost:3001/getNameAndBalance`, {
+      const res = await axios.get(`https://talari-server.vercel.app/`, {
         params: { userAddress: address },
       });
   
