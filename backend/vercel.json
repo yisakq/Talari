@@ -8,6 +8,10 @@
   ],
   "routes": [
     {
+      "src": "/transaction",
+      "dest": "/"
+    },
+    {
       "src": "/(.*)",
       "dest": "/"
     }
