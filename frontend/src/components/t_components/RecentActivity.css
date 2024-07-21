@@ -1,0 +1,36 @@
+/* RecentActivity.css */
+
+/* Base styles for the Recent Activity Card */
+.recent-activity-card {
+  width: 100%;
+  max-height: 500px; /* Adjust as needed */
+  overflow: hidden; /* Hide scrollbars initially */
+}
+
+/* Show scrollbars on hover */
+.recent-activity-card:hover {
+  overflow: auto;
+}
+
+/* Ensure the table container is scrollable horizontally on smaller screens */
+.recent-activity-card .ant-table-wrapper {
+  overflow-x: auto;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* Ensure table cells have appropriate padding */
+.recent-activity-card .ant-table-cell {
+  padding: 8px 16px; /* Adjust padding as needed */
+}
+
+/* Media query to disable horizontal scrolling on larger screens */
+@media screen and (min-width: 768px) {
+  .recent-activity-card .ant-table-wrapper {
+      overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar styles */
+.recent-activity-card::-webkit-scrollbar {
+ display: none;
+}

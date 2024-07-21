@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1{fill:#343434;}
+      .cls-2{fill:#8c8c8c;}
+      .cls-3{fill:#3c3c3b;}
+      .cls-4{fill:#141414;}
+      .cls-5{fill:#393939;}
+    </style>
+  </defs>
+  <title>ethereum-eth</title>
+  <!-- Upper section -->
+  <polygon class="cls-1" points="100 0 97 8 97 150 100 153 200 104 100 0"/>
+  <polygon class="cls-2" points="100 0 0 104 100 153 100 77 100 0"/>
+  
+  <!-- Lower section -->
+  <polygon class="cls-3" points="100 150 99 153 99 200 100 202 200 127 100 150"/>
+  <polygon class="cls-2" points="100 202 100 150 0 127 100 202"/>
+  
+  <!-- Middle section -->
+  <polygon class="cls-4" points="100 153 200 104 100 77 100 153"/>
+  <polygon class="cls-5" points="0 104 100 153 100 77 0 104"/>
+</svg>

@@ -1,0 +1,16 @@
+.request-activity-card {
+  
+  }
+  
+  .request-activity-table-container {
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: auto;
+   
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+  }
+  
