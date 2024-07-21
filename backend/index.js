@@ -21,7 +21,7 @@ function convertArrayToObjects(arr) {
   return dataArray.reverse();
 }
 
-app.get("/api/getNameAndBalance", async (req, res) => {
+app.get("/getNameAndBalance", async (req, res) => {
   const { userAddress } = req.query;
  
 
