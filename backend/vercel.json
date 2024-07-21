@@ -10,11 +10,6 @@
     {
       "src": "/(.*)",
       "dest": "/"
-    },
-
-    {
-      "src": "/transaction",
-      "dest": "../frontend/index.html"
     }
   ]
 }
