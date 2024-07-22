@@ -23,12 +23,12 @@ function AccountDetails({ address, name, balance,getNameAndBalance }) {
   });
 
   const { write } = useContractWrite(config);
-  const { isSuccess: isDeleteSuccess } = useWaitForTransaction({ hash: config?.data?.hash });
+  const { isSuccess } = useWaitForTransaction({ hash: config?.data?.hash });
   useEffect(() => {
-    if (isDeleteSuccess) {
+    if (isSuccess) {
      getNameAndBalance();
     }
-  }, [isDeleteSuccess]);
+  }, [isSuccess,getNameAndBalance]);
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
