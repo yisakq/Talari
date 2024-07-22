@@ -87,6 +87,10 @@ app.get("/getNameAndBalance", async (req, res) => {
   }
 });
 
+app.use("/abc",(req,res)=>{
+  res.send("server is running")
+})
+
 Moralis.start({
   apiKey: process.env.MORALIS_KEY,
 }).then(() => {
