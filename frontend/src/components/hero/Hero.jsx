@@ -6,6 +6,7 @@ import { Link,useNavigate} from 'react-router-dom';
 import { useConnect, useAccount, useDisconnect } from 'wagmi';
 import {useEffect} from 'react'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
+import { openMetaMaskApp } from '../../wallet';
 
 const Hero = () => {
     useEffect(()=>{
@@ -23,6 +24,7 @@ const Hero = () => {
       const handleConnect = async () => {
         try {
           await connect();
+          openMetaMaskApp();
           if (isConnected) {
             console.log("Wallet connected:", address);
             localStorage.setItem('walletConnected', 'true');
