@@ -24,7 +24,6 @@ const Hero = () => {
       const handleConnect = async () => {
         try {
           await connect();
-          openMetaMaskApp();
           if (isConnected) {
             console.log("Wallet connected:", address);
             localStorage.setItem('walletConnected', 'true');
