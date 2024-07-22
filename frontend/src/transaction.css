@@ -69,8 +69,18 @@
     align-items: center;
     gap: 20px;
   }
+  .ant-btn-primary {
+    background-color: #33b88c;
+    
+  }
+  .ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background-color: #156148 !important; 
   
-  .extraOption {
+}
+  
+  
+  .extraOption {  
     width: 180px;
     text-align: center;
     border: 2px solid rgba(0, 102, 255, 0.31);
@@ -82,7 +92,7 @@
   
   .extraOption:hover {
     cursor: pointer;
-    background-color: #31579E;
+    background-color: #3CD3A0;
     color: white;
   }
   
@@ -96,7 +106,7 @@
   }
   
   .quickOption {
-    background-color: #31579E;
+    background-color: #33b88c;
     height: 100px;
     width: 100px;
     border-radius: 10px;
@@ -108,6 +118,9 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
+  }
+  .quickOption:hover{
+    background-color: #156148 !important ;
   }
   
   .numReqs {
