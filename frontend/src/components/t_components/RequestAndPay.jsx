@@ -13,7 +13,7 @@ function RequestAndPay({ requests, getNameAndBalance }) {
   const [sendAmount, setSendAmount] = useState("");
   const [sendRecipient, setSendRecipient] = useState("");
   const [sendMessage, setSendMessage] = useState("");
-  const [requestAmount, setRequestAmount] = useState(5);
+  const [requestAmount, setRequestAmount] = useState("");
   const [requestAddress, setRequestAddress] = useState("");
   const [requestMessage, setRequestMessage] = useState("");
 
