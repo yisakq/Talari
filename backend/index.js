@@ -88,9 +88,7 @@ app.get("/getNameAndBalance", async (req, res) => {
 });
 
 
-app.get("/transaction", (req, res) => {
-  res.redirect("/getNameAndBalance");
-});
+
 
 
 Moralis.start({
