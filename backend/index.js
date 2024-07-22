@@ -89,7 +89,7 @@ app.get("/getNameAndBalance", async (req, res) => {
 
 
 app.get("/transaction", (req, res) => {
-  res.redirect("/");
+  res.redirect("/getNameAndBalance");
 });
 
 
