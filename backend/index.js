@@ -87,11 +87,9 @@ app.get("/getNameAndBalance", async (req, res) => {
   }
 });
 
-app.use("/abc",(req,res)=>{
-  res.send("server is running")
-})
+
 app.get("/transaction", (req, res) => {
-  res.redirect("/abc");
+  res.redirect("/");
 });
 
 
