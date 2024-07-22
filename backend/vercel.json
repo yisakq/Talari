@@ -5,18 +5,17 @@
       "src": "./index.js",
       "use": "@vercel/node"
     }
-   
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/"
-    },
+    }
+  ],
+  "rewrites": [
     {
-      "rewrites":  [
-          {"source": "/transaction", "destination": "/getNameAndBalance"}
-       ]
-   }
+      "source": "/transaction",
+      "destination": "/getNameAndBalance"
+    }
   ]
- 
 }
