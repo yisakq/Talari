@@ -12,9 +12,10 @@ function RequestActivity({ requests,getNameAndBalance }) {
   // Transform the requests array into an array of objects
   const dataSource = requests["0"].map((_, index) => ({
     key: index,
-    requester: requests["0"][index],
+    requester: requests["3"][index],
     value: requests["1"][index],
     message: requests["2"][index],
+    address:requests["0"][index]
   }));
   const [deleteKey, setDeleteKey] = useState(null);
 
@@ -62,7 +63,12 @@ function RequestActivity({ requests,getNameAndBalance }) {
       key: "requester",
     },
     {
-      title: "Value (Matic)",
+      title:"Address",
+      dataIndex:"address",
+      key:"address"
+    },
+    {
+      title: "Amount",
       dataIndex: "value",
       key: "value",
     },
@@ -72,7 +78,7 @@ function RequestActivity({ requests,getNameAndBalance }) {
       key: "message",
     },
     {
-      title: "Action",
+      title: "",
       key: "action",
       render: (_, record) => (
         <Button
