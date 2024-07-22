@@ -39,7 +39,6 @@ function RequestActivity({ requests,getNameAndBalance }) {
   useEffect(() => {
     if (isSuccessDelete) {
       getNameAndBalance();
-     // setDataSource(dataSource.filter(item => item.key !== deleteKey));
       notification.success({ message: 'Request deleted successfully' });
     }
     if (isErrorDelete) {
