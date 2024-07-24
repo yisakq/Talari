@@ -33,7 +33,7 @@ const columns = [
         }
       >
         {record.type.toLowerCase() === "sent" ? "-" : "+"}
-        {record.amount} Matic
+        {record.amount} ETH
       </div>
     ),
   },

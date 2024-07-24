@@ -8,7 +8,7 @@ import { usePrepareContractWrite, useContractWrite, useWaitForTransaction } from
 import { sepolia } from '@wagmi/chains';
 import ABI from '../../abi.json';
 import {useEffect} from 'react'
-const contractAddress = '0x2821C5c18549BDAD5076fC829CACB414380978dE'; 
+const contractAddress = '0x12dfa074761eee32cec7E1381a8e1E755575B098'; 
 
 function AccountDetails({ address, name, balance,getNameAndBalance }) {
   const [username, setUsername] = useState('');

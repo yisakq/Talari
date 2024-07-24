@@ -19,7 +19,7 @@ function RequestAndPay({ requests, getNameAndBalance }) {
 
   const { config } = usePrepareContractWrite({
     chainId: sepolia.id,
-    address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+    address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
     abi: ABI,
     functionName: "sendPayment",
     args: [sendRecipient, sendAmount, sendMessage],
@@ -34,7 +34,7 @@ function RequestAndPay({ requests, getNameAndBalance }) {
 
   const { config: configRequest } = usePrepareContractWrite({
     chainId: sepolia.id,
-    address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+    address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
     abi: ABI,
     functionName: "createRequest",
     args: [requestAddress, requestAmount, requestMessage],

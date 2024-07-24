@@ -21,7 +21,7 @@ function RequestActivity({ requests,getNameAndBalance }) {
 
   const { config: configDelete } = usePrepareContractWrite({
     chainId: sepolia.id,
-    address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+    address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
     abi: ABI,
     functionName: "deleteRequest",
     args: [deleteKey], // Adjust to your contract's delete function parameters

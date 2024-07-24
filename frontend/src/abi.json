@@ -89,15 +89,6 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "_request", "type": "uint256" }
-    ],
-    "name": "payRequest",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
       { "internalType": "address", "name": "receiver", "type": "address" },
       { "internalType": "uint256", "name": "_amount", "type": "uint256" },
       { "internalType": "string", "name": "_message", "type": "string" }

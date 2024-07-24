@@ -10,7 +10,7 @@ app.use(express.json());
 
 function convertArrayToObjects(arr) {
   const dataArray = arr.map((transaction, index) => ({
-    key: (arr.length + 1 - index).toString(),
+      key: (arr.length + 1 - index).toString(),
     type: transaction[0],
     amount: transaction[1],
     message: transaction[2],
@@ -28,7 +28,7 @@ app.get("/getNameAndBalance", async (req, res) => {
   try {
     const response = await Moralis.EvmApi.utils.runContractFunction({
       chain: "11155111",
-      address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+      address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
       functionName: "getMyName",
       abi: ABI,
       params: { _user: userAddress },
@@ -54,7 +54,7 @@ app.get("/getNameAndBalance", async (req, res) => {
 
     const fourResponse = await Moralis.EvmApi.utils.runContractFunction({
       chain: "11155111",
-      address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+      address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
       functionName: "getMyHistory",
       abi: ABI,
       params: { _user: userAddress },
@@ -64,7 +64,7 @@ app.get("/getNameAndBalance", async (req, res) => {
 
     const fiveResponse = await Moralis.EvmApi.utils.runContractFunction({
       chain: "11155111",
-      address: "0x2821C5c18549BDAD5076fC829CACB414380978dE",
+      address: "0x12dfa074761eee32cec7E1381a8e1E755575B098",
       functionName: "getMyRequests",
       abi: ABI,
       params: { _user: userAddress },
