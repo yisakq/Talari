@@ -42,7 +42,7 @@ const Hero = () => {
             </div>
                 
                 <div className='hero_right' data-aos="zoom-in-up">
-                   <h1>Make easier your crypto transactions.</h1>
+                   <h1>Make your crypto transactions easier.</h1>
                    <p>
                    Our platform allows you to send and receive cryptocurrency quickly, securely, and affordably. Join the revolution in decentralized finance today and take control of your financial future. Log in now to start using our platform and experience the freedom of decentralized transactions.
                    </p>
